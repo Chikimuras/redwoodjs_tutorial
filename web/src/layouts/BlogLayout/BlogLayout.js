@@ -5,11 +5,14 @@ const BlogLayout = ({ children }) => {
     <>
       <header>
         <div id="logo">
-          <Link to={routes.home()}>Rewood Blog</Link>
+          <Link to={routes.home()}>Redwood Blog</Link>
         </div>
-        <nav>
+        <nav className="nav-bar flex-center gap-1">
           <li>
             <Link to={routes.about()}>About</Link>
+          </li>
+          <li>
+            <Link to={routes.contact()}>Contact</Link>
           </li>
         </nav>
       </header>
